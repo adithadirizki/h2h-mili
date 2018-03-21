@@ -1,0 +1,21 @@
+{
+    "handler_name": "ST24",
+    "products": [
+        "PLEASE_CHANGE_ME"
+    ],
+    "core_url": "http://127.0.0.1:32972/apikey/PLEASE_CHANGE_ME",
+    "pull_interval_ms": 1000,
+    "partner": {
+        "url": "https://PLEASE_CHANGE_ME:6789/",
+        "msidn": "PLEASE_CHANGE_ME",
+        "pin": "PLEASE_CHANGE_ME"
+    },
+    "remote_products": {
+        "PLEASE_CHANGE_ME": "PLEASE_CHANGE_ME"
+    },
+    "reverse_report_port": 27440,
+    "control_panel": {
+        "listen_port": 27441
+    },
+    "do_not_verbose_log_report": true
+}

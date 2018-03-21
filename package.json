@@ -1,0 +1,28 @@
+{
+  "name": "komodo-gw-st24",
+  "version": "0.1.0",
+  "description": "Komodo Gateway to ST24 XML-RPC",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.kodesumber.com:komodo/komodo-gw-st24.git"
+  },
+  "keywords": [
+    "komodo",
+    "tektrans",
+    "ppob",
+    "st24",
+    "xmlrpc",
+    "xml-rpc"
+  ],
+  "author": "Adhidarma Hadiwinoto <me@adhisimon.org>",
+  "license": "ISC",
+  "dependencies": {
+    "komodo-sdk": "git+http://gitlab.kodesumber.com/komodo/komodo-sdk.git",
+    "xmlrpc": "^1.3.2"
+  }
+}
