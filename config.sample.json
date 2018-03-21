@@ -7,7 +7,7 @@
     "pull_interval_ms": 1000,
     "partner": {
         "url": "https://PLEASE_CHANGE_ME:6789/",
-        "msidn": "PLEASE_CHANGE_ME",
+        "msisdn": "PLEASE_CHANGE_ME",
         "pin": "PLEASE_CHANGE_ME"
     },
     "remote_products": {
