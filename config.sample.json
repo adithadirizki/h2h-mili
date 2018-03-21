@@ -8,7 +8,8 @@
     "partner": {
         "url": "https://PLEASE_CHANGE_ME:6789/",
         "msisdn": "PLEASE_CHANGE_ME",
-        "pin": "PLEASE_CHANGE_ME"
+        "pin": "PLEASE_CHANGE_ME",
+        "use_sslv3": false
     },
     "remote_products": {
         "PLEASE_CHANGE_ME": "PLEASE_CHANGE_ME"
