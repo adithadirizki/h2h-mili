@@ -11,6 +11,13 @@
         "pin": "PLEASE_CHANGE_ME",
         "use_sslv3": false
     },
+    "push_server": {
+        "apikey": "PLEASE_CHANGE_ME",
+        "advice": {
+            "port": 14283,
+            "url": "http://PLEASE_CHANGE_ME:14283/apikey/PLEASE_CHANGE_ME/advice"
+        }
+    },
     "remote_products": {
         "PLEASE_CHANGE_ME": "PLEASE_CHANGE_ME"
     },
