@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "komodo-sdk": "git+http://gitlab.kodesumber.com/komodo/komodo-sdk.git",
+    "moment": "^2.22.1",
     "xmlrpc": "^1.3.2"
   },
   "devDependencies": {
