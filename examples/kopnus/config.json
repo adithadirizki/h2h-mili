@@ -1,11 +1,12 @@
 {
     "auto_resend": {
         "delay_ms": 60000,
-        "max_retry": 1,
-        "max_age_ms": 240000
+        "max_retry": 1
     },
     "sn_pattern": {
         "pattern": "SN=(.*?)\\.",
         "match_idx": 1
-    }
+    },
+    "advice_max_age_ms": 240000,
+    "advice_is_topuprequest": true
 }
