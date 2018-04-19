@@ -7,6 +7,10 @@
         "pattern": "SN=(.*?)\\.",
         "match_idx": 1
     },
+    "amount_pattern": {
+        "pattern": "HRG=(\\d+)",
+        "match_idx": 1
+    },
     "remote_products": {
         "S10": "3043051",
         "S20": "3023092"
