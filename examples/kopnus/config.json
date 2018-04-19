@@ -12,5 +12,6 @@
         "S20": "3023092"
     },
     "advice_max_age_ms": 240000,
-    "advice_is_topuprequest": true
+    "advice_is_topuprequest": true,
+    "responsecode_tag": "RESPONCODE"
 }

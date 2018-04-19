@@ -27,6 +27,7 @@
     },
     "advice_max_age_ms": 0,
     "advice_is_topuprequest": false,
+    "responsecode_tag": null,
     "do_not_verbose_log_report": true,
     "force_all_to_pending": false
 }
