@@ -25,6 +25,8 @@
     "control_panel": {
         "listen_port": 27441
     },
+    "advice_max_age_ms": 0,
+    "advice_is_topuprequest": false,
     "do_not_verbose_log_report": true,
     "force_all_to_pending": false
 }
