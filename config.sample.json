@@ -25,5 +25,6 @@
     "control_panel": {
         "listen_port": 27441
     },
-    "do_not_verbose_log_report": true
+    "do_not_verbose_log_report": true,
+    "force_all_to_pending": false
 }
