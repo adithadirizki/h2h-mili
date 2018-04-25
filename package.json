@@ -1,6 +1,6 @@
 {
   "name": "komodo-gw-st24",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Komodo Gateway to ST24 XML-RPC",
   "main": "index.js",
   "scripts": {
