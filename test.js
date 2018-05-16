@@ -35,4 +35,32 @@ describe('#st24', function() {
         })
     })
 
+    describe('#extractBalanceFromMsg', function() {
+        describe('using native ST24 response', function() {
+            it('should return correct balance', function()  {
+                st24.extractBalanceFromMsg('SN=0516150344145563101; 16/05/18 15:03 ISI TR5 KE 0895350249796, SUKSES.SAL=426.078,HRG=5.250,ID=47285513,SN=0516150344145563101; ..trx lancar').should.equal(426078);
+                st24.extractBalanceFromMsg('15/05/18 17:19 ISI SAN10 KE 08535686667, NOMOR YANG ANDA MASUKKAN SALAH, MOHON TELITI KEMBALI..SAL=1.144.578,ID=47250459, ..trx lancar').should.equal(1144578)
+            })
+
+            it('should return null if there is no balance info', function() {
+                should.not.exists(st24.extractBalanceFromMsg('PENGECEKAN GAGAL'));
+            })
+        })
+
+        describe('using custom rule', function() {
+            const custom_rule = {
+                pattern: "SALDO=(\\d+)",
+                match_idx: 1
+            }
+
+            it('should return correct balance', function() {
+                st24.extractBalanceFromMsg('ISI Telkomsel 10 ke 082139822309 BERHASIL.SN=0041002442595407.HRG=10400.SALDO=104911920', custom_rule).should.equal(104911920);
+            })
+
+            it('should return null if there is no balance info', function() {
+                should.not.exists(st24.extractBalanceFromMsg('ISI Ke 08523548915 GAGAL.TRXID=20180516123010017371', custom_rule))
+            })
+        })
+    })
+
 })
