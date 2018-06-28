@@ -1,6 +1,7 @@
 "use strict";
 process.chdir(__dirname);
 
+const apiserver = require('komodo-sdk/api-server');
 const pullgw = require('komodo-sdk/gateway/pull');
 const partner = require('./lib/partner');
 const reverseReport = require('./lib/reverse-report');

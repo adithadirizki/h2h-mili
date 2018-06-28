@@ -25,6 +25,10 @@
     "control_panel": {
         "listen_port": 27441
     },
+    "apiserver": {
+        "port": 27442,
+        "apikey": "PLEASE_CHANGE_ME"
+    },
     "advice_max_age_ms": 0,
     "advice_is_topuprequest": false,
     "responsecode_tag": null,
