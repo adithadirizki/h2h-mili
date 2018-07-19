@@ -9,8 +9,12 @@ describe('#st24', function() {
     describe('#extractSnFromMessage', function() {
 
         describe('#using default st24 rule', function() {
-            it('should return correct sn', function() {
+            it('should return correct sn from topUpRequest response', function() {
                 st24.extractSnFromMessage('SN=0419165234155980102;19/04/18 16:52 ISI TR5 KE 0895621829255, SUKSES.SAL=1.323.934,HRG=5.250,ID=46398092,SN=0419165234155980102; ..trx lancar').should.equal('0419165234155980102');
+            })
+
+            it('should return correct sn from topUpInquiry response', function() {
+                st24.extractSnFromMessage('19/07/18 20:53 ISI SPT20 KE 081264858057, SUKSES.SAL=828.425,HRG=19.700,ID=48761021,SN=0041002635369521;').should.equal('0041002635369521');
             })
         })
 
