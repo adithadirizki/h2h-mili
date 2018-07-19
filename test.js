@@ -63,4 +63,19 @@ describe('#st24', function() {
         })
     })
 
+    describe('#extractPriceFromMsg', function() {
+        describe('using native ST24 topUpRequest direct response', function() {
+            it('should return correct price', function() {
+                st24.extractPriceFromMsg('SN=0041002635395450;;19/07/18 21:01 ISI SPT20 KE 08125100091, SUKSES. SAL=798.500,HRG=19.700,ID=48761075,SN=0041002635395450;; ..trx lancar').should.equal(19700);
+                st24.extractPriceFromMsg('SN=0516150344145563101; 16/05/18 15:03 ISI TR5 KE 0895350249796, SUKSES.SAL=426.078,HRG=5.250,ID=47285513,SN=0516150344145563101; ..trx lancar').should.equal(5250);
+            });
+        })
+
+        describe('using native ST24 topUpInquiry response', function() {
+            it('should return correct price', function() {
+                st24.extractPriceFromMsg('19/07/18 20:53 ISI SPT20 KE 081264858057, SUKSES.SAL=828.425,HRG=19.700,ID=48761021,SN=0041002635369521;').should.equal(19700);
+            })
+        })
+    })
+
 })
