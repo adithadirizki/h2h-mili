@@ -1,5 +1,7 @@
 "use strict";
 process.chdir(__dirname);
+const fs = require('fs');
+fs.writeFileSync('pid.txt', process.pid);
 
 const apiserver = require('komodo-sdk/api-server');
 const pullgw = require('komodo-sdk/gateway/pull');
