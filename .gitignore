@@ -3,3 +3,5 @@
 /tmp/
 /logs/
 /rc-local.json
+/config-backup/
+pid.txt
