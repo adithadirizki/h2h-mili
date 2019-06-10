@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "json-stringify-pretty-compact": "^1.1.0",
+    "komodo-gw-irs-lib": "git+http://gitlab.kodesumber.com/komodo/komodo-gw-irs-lib.git",
     "komodo-sdk": "git+http://gitlab.kodesumber.com/komodo/komodo-sdk.git",
     "moment": "^2.24.0",
     "xmlrpc": "^1.3.2"
