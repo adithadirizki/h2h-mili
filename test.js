@@ -1,5 +1,7 @@
 "use strict";
 
+/* global describe it */
+
 const should = require('should');
 
 const st24 = require('./lib/st24');
