@@ -1,9 +1,13 @@
 "use strict";
+
 process.chdir(__dirname);
 const fs = require('fs');
 fs.writeFileSync('pid.txt', process.pid);
 
 const config = require('komodo-sdk/config');
+
+global.KOMODO_LOG_LABEL = `KOMODO-GW@${ config.handler_name }`;
+
 const logger = require('komodo-sdk/logger');
 
 require('komodo-sdk/api-server');
