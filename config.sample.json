@@ -1,37 +1,67 @@
 {
-    "handler_name": "ST24",
-    "products": [
-        "PLEASE_CHANGE_ME"
-    ],
-    "core_url": "http://127.0.0.1:32972/apikey/PLEASE_CHANGE_ME",
-    "pull_interval_ms": 1000,
-    "partner": {
-        "url": "https://PLEASE_CHANGE_ME:6789/",
-        "msisdn": "PLEASE_CHANGE_ME",
-        "pin": "PLEASE_CHANGE_ME",
-        "use_sslv3": false
-    },
-    "push_server": {
-        "apikey": "PLEASE_CHANGE_ME",
-        "advice": {
-            "port": 14283,
-            "url": "http://PLEASE_CHANGE_ME:14283/apikey/PLEASE_CHANGE_ME/advice"
-        }
-    },
-    "remote_products": {
-        "PLEASE_CHANGE_ME": "PLEASE_CHANGE_ME"
-    },
-    "reverse_report_port": 27440,
-    "control_panel": {
-        "listen_port": 27441
-    },
-    "apiserver": {
-        "port": 27442,
-        "apikey": "PLEASE_CHANGE_ME"
-    },
-    "advice_max_age_ms": 0,
-    "advice_is_topuprequest": false,
-    "responsecode_tag": null,
-    "do_not_verbose_log_report": true,
-    "force_all_to_pending": false
+  "handler_name": "MILI0",
+  "products": [
+    "TSEL5",
+    "TSEL10",
+    "TSELURP20",
+    "TSELURP25",
+    "TSELURP50",
+    "TSELURP100",
+    "XXXX"
+  ],
+  "pull_interval_ms": 110,
+  "partner": {
+    "url": "http://192.168.45.156:6856/xmlh2h/v2/",
+    "msisdn": "XXXXX",
+    "pin": "XXXX",
+    "use_sslv3": false,
+    "override_rc": {
+      "14": "14",
+      "55": "55",
+      "30": "40",
+      "68": "68",
+      "99": "40",
+      "00": "00"
+    }
+  },
+  "push_server": {
+    "apikey": "48cf4037-4320-4a09-b2c2-37c5ae824b4b",
+    "advice": {
+      "port": 14283,
+      "url": "http://192.168.1.120:14283/apikey/48cf4037-4320-4a09-b2c2-37c5ae824b4b/advice"
+    }
+  },
+  "remote_products": {
+    "TSEL5": "SP5",
+    "TSEL10": "TB10",
+    "TSEL20": "SP20",
+    "TSEL25": "SP25",
+    "TSELURP20": "ST20",
+    "TSELURP25": "ST25",
+    "TSELURP50": "ST50",
+    "TSELURP100": "ST100"
+  },
+  "reverse_report_port": 27440,
+  "control_panel": {
+    "listen_port": 27441,
+    "url": "http://192.168.1.120:27441"
+  },
+  "apiserver": {
+    "port": 27442,
+    "apikey": "e4bcf58a-73fb-4612-8d61-15c3c305f333",
+    "url": "http://localhost:27442/apikey/e4bcf58a-73fb-4612-8d61-15c3c305f333"
+  },
+  "do_not_verbose_log_report": true,
+  "sn_pattern": {
+    "pattern": "SN[=:](.*?)[\\s;]+",
+    "match_idx": 1
+  },
+  "balance_pattern": {
+    "pattern": "SALDO=(\\d+)",
+    "match_idx": 1
+  },
+  "amount_pattern": {
+    "pattern": "HARGA=(\\d+)",
+    "match_idx": 1
+  }
 }
