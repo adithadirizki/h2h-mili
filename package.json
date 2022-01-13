@@ -1,7 +1,7 @@
 {
-  "name": "komodo-gw-st24",
-  "version": "2.1.16",
-  "description": "Komodo Gateway to ST24 XML-RPC",
+  "name": "komodo-gw-mili",
+  "version": "1.0.0",
+  "description": "Komodo Gateway to MILI XML-RPC",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.kodesumber.com:komodo/komodo-gw-st24.git"
+    "url": "git@gitlab.com:sridata/komodo/komodo-mili.git"
   },
   "keywords": [
     "komodo",
@@ -23,7 +23,6 @@
   "license": "ISC",
   "dependencies": {
     "json-stringify-pretty-compact": "^1.1.0",
-    "komodo-gw-irs-lib": "git+http://gitlab.kodesumber.com/komodo/komodo-gw-irs-lib.git",
     "komodo-sdk": "git+http://gitlab.kodesumber.com/komodo/komodo-sdk.git",
     "moment": "^2.24.0",
     "xmlrpc": "^1.3.2"
